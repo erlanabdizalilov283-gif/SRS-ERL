@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(182, 182, 197), rgb(42, 42, 64));
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.muzykalnyi-konteyner {
+    width: 100%;
+    max-width: 450px;
+    background: rgb(37, 37, 56);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(224, 224, 224);
+}
+
+.zagruzka-bloka {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.knopka-zagruzki {
+    display: inline-block;
+    background: rgb(13, 110, 253);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.knopka-zagruzki:hover {
+    background: rgb(11, 94, 215);
+}
+
+.canvas-blok {
+    background: rgb(21, 21, 34);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    width: 100%;
+    height: 120px;
+}
+
+.info-treka {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(176, 176, 192);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.upravlenie-pleerom {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-upravlenie {
+    background: rgb(53, 53, 77);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-upravlenie:hover {
+    background: rgb(74, 74, 106);
+}
+
+.btn-glavnaya {
+    background: rgb(13, 110, 253);
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+}
+
+.btn-glavnaya:hover {
+    background: rgb(11, 94, 215);
+}
+
+.progress-bar-blok {
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: rgb(13, 110, 253);
+    cursor: pointer;
+}
+
+.pleylist-blok h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(53, 53, 77);
+    padding-bottom: 5px;
+}
+
+#spisokTrekov {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#spisokTrekov li {
+    padding: 8px 10px;
+    background: rgb(28, 28, 43);
+    margin-bottom: 6px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#spisokTrekov li:hover {
+    background: rgb(45, 45, 68);
+}
+
+#spisokTrekov li.aktivnyy {
+    background: rgb(13, 110, 253);
+    color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой музыкальный плеер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="muzykalnyi-konteyner">
+        <h1>Музыкальный плеер</h1>
+        <div class="zagruzka-bloka">
+            <label for="zagruzitFayly" class="knopka-zagruzki">📁 Загрузить треки</label>
+            <input type="file" id="zagruzitFayly" accept="audio/*" multiple style="display: none;">
+        </div>
+        <div class="canvas-blok">
+            <canvas id="audioCanvas" width="400" height="120"></canvas>
+        </div>
+        <div class="info-treka">
+            <span id="nazvanieTreka">Трек не выбран</span>
+        </div>
+        <div class="upravlenie-pleerom">
+            <button id="predVesh" class="btn-upravlenie">⏮</button>
+            <button id="playPauzaBtn" class="btn-upravlenie btn-glavnaya">▶</button>
+            <button id="sledVesh" class="btn-upravlenie">⏭</button>
+        </div>
+        <div class="progress-bar-blok">
+            <input type="range" id="progressPleyera" value="0" min="0" max="100" step="1">
+        </div>
+        <div class="pleylist-blok">
+            <h3>Плейлист</h3>
+            <ul id="spisokTrekov"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
